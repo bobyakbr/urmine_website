@@ -1,11 +1,9 @@
 
-
-
 import styles from "./page.module.css";
-import Navbar from "./components/navbar";
+
 import Contact from './components/contact';
 import About from './components/about'
-import Footer from './components/footer'
+
 import Solutions from './components/solution'
 import CareersSection from "./components/careerssection";
 

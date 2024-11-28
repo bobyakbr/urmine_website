@@ -5,16 +5,6 @@
 'use client';
 
 
-import ProductCard from './product';
-import Image from 'next/image';
-
-
-
-
-   
-
-      ;
-      
   
       const About = () => {
         return (

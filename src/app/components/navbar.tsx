@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 ;
 import Image from 'next/legacy/image';
 
@@ -10,8 +10,8 @@ import Image from 'next/legacy/image';
 const Navbar = () => {
   
 
-  const [filteredResults, setFilteredResults] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  // const [filteredResults, setFilteredResults] = useState([]);
+  // const [searchTerm, setSearchTerm] = useState('');
  
 
 
