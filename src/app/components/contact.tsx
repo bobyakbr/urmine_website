@@ -2,7 +2,7 @@
 'use client';
 
 import { FC } from 'react';
-import { useForm } from 'react-hook-form';
+
 import { sendEmail } from '../utils/send-email';
 
 
@@ -14,11 +14,7 @@ export type FormData = {
 };
 
 const Contact: FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
-
-  function onSubmit(data: FormData) {
-    sendEmail(data);
-  }
+  
 
   return (
 <div className='bg-[url("/pic3.webp")] bg-center bg-fixed bg-auto bg-cover bg-opacity-90' id="contact">
@@ -30,7 +26,7 @@ const Contact: FC = () => {
         <h3>More Info Please Contact Us!</h3></div>
       </div>
 
-    <form onSubmit={handleSubmit(onSubmit)} className=''>
+    <form className=''>
     <h1 className='text-2xl font-bold visible sm:hidden md:hidden'>Contact</h1>
     <br/>
       <div className=''>
@@ -38,7 +34,7 @@ const Contact: FC = () => {
           type='text'
           placeholder='Full Name'
           className='mb-3 w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('name', { required: true })}
+          // {...register('name', { required: true })}
         />
       </div>
       <div className='mb-3'>
@@ -47,7 +43,7 @@ const Contact: FC = () => {
           type='email'
           placeholder='Email'
           className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('email', { required: true })}
+          // {...register('email', { required: true })}
         />
       </div>
       <div className='mb-3'>
@@ -55,7 +51,7 @@ const Contact: FC = () => {
           rows={4}
           placeholder='Message'
           className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
-          {...register('message', { required: true })}
+          // {...register('message', { required: true })}
         ></textarea>
       </div>
       <div>
