@@ -5,7 +5,7 @@ import Image from 'next/legacy/image';
 const ProductCard = ({ product }) => {
     return (
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <Image src={product.image} alt={product.name} className="w-full h-48 object-cover" />
+        {/* <Image src={product.image} alt={product.name} className="w-full h-48 object-cover" /> */}
         <div className="p-4">
           <h3 className="text-xl font-semibold text-gray-800">{product.name}</h3>
           <p className="mt-2 text-gray-600">{product.description}</p>
